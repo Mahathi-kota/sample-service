@@ -90,14 +90,19 @@ public class StepDefs {
 	@Then("^I'll get the following user details$")
 	public void iLlGetTheFollowingUserDetails(Map<String,String> expected) throws Throwable {
 		UserResource ur = (UserResource)resource;
+		USerDetails usd =ur.getUserDetails();
 		for( Map.Entry<String, String> row : expected.entrySet() ) {
 			switch(row.getKey()) {
 				case "Surname":
-					USerDetails usd =ur.getUserDetails().
 					//assertTrue("Doe".equals(usd.getSurname()),true);
-					
-					assertTrue(true);
-					throw new PendingException();
+					assertTrue("Doe".equals(usd.getSurname()));
+					break;
+				case "GivenName":
+					assertTrue("John".equals(usd.getGivenName()));
+					break;
+				case "DoB" :
+				assertTrue("1768-01-01".equals(usd.getDOB()));
+					break;
 				default:
 					throw new PendingException();
 			}
@@ -106,7 +111,6 @@ public class StepDefs {
 		// For automatic transformation, change DataTable to one of
 		// List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
 		// E,K,V must be a scalar (String, Integer, Date, enum etc)
-		throw new PendingException();
 	}
 
 	@When("^set the preferred name to \"([^\"]*)\"$")
