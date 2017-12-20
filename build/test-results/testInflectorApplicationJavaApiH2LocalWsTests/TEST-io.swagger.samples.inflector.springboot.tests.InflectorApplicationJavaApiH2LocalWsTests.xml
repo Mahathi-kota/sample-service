@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.swagger.samples.inflector.springboot.tests.InflectorApplicationJavaApiH2LocalWsTests" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="Mahathis-MBP" time="0.0">
+  <properties/>
+  <system-out><![CDATA[16:10:53.993 [Test worker] INFO io.swagger.samples.inflector.springboot.SpringProfileCucumber - initial spring.profiles.active: null
+16:10:54.000 [Test worker] INFO io.swagger.samples.inflector.springboot.SpringProfileCucumber - current spring.profiles.active: integrationTest,javaApi,h2,localWs
+
+4 Scenarios (?[33m3 pending?[0m, ?[32m1 passed?[0m)
+12 Steps (?[36m2 skipped?[0m, ?[33m3 pending?[0m, ?[32m7 passed?[0m)
+0m0.492s
+
+cucumber.api.PendingException: TODO: implement me
+	at io.swagger.samples.inflector.springboot.StepDefs.iLlGetTheFollowingAccountDetails(StepDefs.java:85)
+	at ✽.Then I'll get the following account details(Accounts.feature:13)
+
+cucumber.api.PendingException: TODO: implement me
+	at io.swagger.samples.inflector.springboot.StepDefs.iLlGetTheFollowingUserDetails(StepDefs.java:94)
+	at ✽.Then I'll get the following user details(UserDetails.feature:13)
+
+cucumber.api.PendingException: TODO: implement me
+	at io.swagger.samples.inflector.springboot.StepDefs.setThePreferredNameTo(StepDefs.java:100)
+	at ✽.When set the preferred name to "John Doe, first of his name, fictitious in nature, king of the unknown, bane of detectives, master of mysteries."(UserDetails.feature:21)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

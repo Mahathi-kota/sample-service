@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Scenario: Set Preferred Name</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Scenario: Set Preferred Name</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Scenario: Set Preferred Name</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">3</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.028s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox skipped" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="skipped">And I request the User Details API</td>
+<td>-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">Given The User table has the following entry</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="skipped">Then I'll get the following user details</td>
+<td>-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">When set the preferred name to &quot;John Doe, first of his name, fictitious in nature, king of the unknown, bane of detectives, master of mysteries.&quot;</td>
+<td>-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">classMethod</td>
+<td>0.026s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017-12-20 16:11:02.871  INFO 2465 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [io.swagger.samples.inflector.springboot.StepDefs]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-12-20 16:11:02.876  INFO 2465 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-12-20 16:11:02.878  INFO 2465 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@b5c877a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19fcfd8d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74368744, org.springframework.test.context.support.DirtiesContextTestExecutionListener@413b68d7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2eb340dd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50ddc013, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@109161eb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@af6cefe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3ef7d2d5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@944040, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b91e780, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@27ac4b32]
+2017-12-20 16:11:02.879  INFO 2465 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Replacing scope 'cucumber-glue' from [cucumber.runtime.java.spring.GlueCodeScope@393413c0] to [cucumber.runtime.java.spring.GlueCodeScope@5f98691]
+2017-12-20 16:11:02.884  INFO 2465 --- [    Test worker] h2database                               : jdbc[12] 
+/*SQL #:1*/insert into UserDetails values( 'DoB','null');
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at 20/12/2017 4:11:03 PM</p>
+</div>
+</div>
+</body>
+</html>

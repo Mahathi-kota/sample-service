@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Scenario: Get Accounts Details</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Scenario: Get Accounts Details</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Scenario: Get Accounts Details</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">1</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">8.466s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox skipped" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Given The user has the following accounts</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="skipped">Then I'll get the following account details</td>
+<td>-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">When I request the Account API</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">classMethod</td>
+<td>8.464s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:10:54.064 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:10:54.096 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:10:54.131 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [io.swagger.samples.inflector.springboot.StepDefs] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:10:54.156 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [io.swagger.samples.inflector.springboot.StepDefs]: class path resource [io/swagger/samples/inflector/springboot/StepDefs-context.xml] does not exist
+16:10:54.157 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [io.swagger.samples.inflector.springboot.StepDefs]: class path resource [io/swagger/samples/inflector/springboot/StepDefsContext.groovy] does not exist
+16:10:54.157 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [io.swagger.samples.inflector.springboot.StepDefs]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:10:54.223 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [io.swagger.samples.inflector.springboot.StepDefs]
+16:10:54.253 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [io.swagger.samples.inflector.springboot.StepDefs]: using defaults.
+16:10:54.258 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:10:54.303 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@64a13a9b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ce0e5b4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ca0fa58, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45464896, org.springframework.test.context.transaction.TransactionalTestExecutionListener@285ed747, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@53685abd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@589108b2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2fe4f9ce, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@71def79a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60f2e6ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@30f6a69a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@38d413c3]
+16:10:54.422 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:10:54.422 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:10:54.423 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:10:54.425 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+16:10:54.426 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2017-12-20 16:10:55.637  INFO 2465 --- [    Test worker] i.s.s.inflector.springboot.StepDefs      : Starting StepDefs on Mahathis-MBP with PID 2465 (started by mahathi in /Users/mahathi/sample-service)
+2017-12-20 16:10:55.639  INFO 2465 --- [    Test worker] i.s.s.inflector.springboot.StepDefs      : The following profiles are active: integrationTest,javaApi,h2,localWs
+2017-12-20 16:10:55.682  INFO 2465 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@236c3ae5: startup date [Wed Dec 20 16:10:55 AEDT 2017]; root of context hierarchy
+2017-12-20 16:10:57.830  INFO 2465 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-20 16:10:57.958  INFO 2465 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f315da7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-20 16:10:58.011  INFO 2465 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-12-20 16:10:58.031  INFO 2465 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a9998a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-20 16:10:58.751  INFO 2465 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-20 16:10:58.775  INFO 2465 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-12-20 16:10:58.777  INFO 2465 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-20 16:10:58.969  INFO 2465 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-20 16:10:58.969  INFO 2465 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3292 ms
+loading inflector config from inflector.yaml
+2017-12-20 16:10:59.571  INFO 2465 --- [ost-startStop-1] i.s.i.c.SwaggerOperationController       : looking for method: `public io.swagger.inflector.models.ResponseContext getApiRoot(io.swagger.inflector.models.RequestContext request)` in class `io.swagger.samples.inflector.springboot.controllers.Default`
+2017-12-20 16:10:59.977  WARN 2465 --- [ost-startStop-1] i.s.inflector.utils.ReflectionUtils      : Failed to find class [io.swagger.samples.inflector.springboot.controllers.User]
+2017-12-20 16:10:59.978  WARN 2465 --- [ost-startStop-1] i.s.inflector.utils.ReflectionUtils      : Failed to find class [io.swagger.samples.inflector.springboot.controllers.UserController]
+2017-12-20 16:10:59.978  WARN 2465 --- [ost-startStop-1] i.s.inflector.utils.ReflectionUtils      : Failed to find class [default]
+2017-12-20 16:10:59.979  WARN 2465 --- [ost-startStop-1] i.s.inflector.utils.ReflectionUtils      : Failed to find class [default]
+2017-12-20 16:10:59.980  INFO 2465 --- [ost-startStop-1] i.s.i.c.SwaggerOperationController       : looking for method: `public io.swagger.inflector.models.ResponseContext getUserDetails(io.swagger.inflector.models.RequestContext request)` in class `io.swagger.samples.inflector.springboot.controllers.Default`
+2017-12-20 16:10:59.982  WARN 2465 --- [ost-startStop-1] i.s.inflector.utils.ReflectionUtils      : Failed to find class [io.swagger.samples.inflector.springboot.controllers.User]
+2017-12-20 16:10:59.983  WARN 2465 --- [ost-startStop-1] i.s.inflector.utils.ReflectionUtils      : Failed to find class [io.swagger.samples.inflector.springboot.controllers.UserController]
+2017-12-20 16:10:59.984  WARN 2465 --- [ost-startStop-1] i.s.inflector.utils.ReflectionUtils      : Failed to find class [default]
+2017-12-20 16:10:59.984  WARN 2465 --- [ost-startStop-1] i.s.inflector.utils.ReflectionUtils      : Failed to find class [default]
+2017-12-20 16:10:59.985  INFO 2465 --- [ost-startStop-1] i.s.i.c.SwaggerOperationController       : looking for method: `public io.swagger.inflector.models.ResponseContext updateUserDetails(io.swagger.inflector.models.RequestContext request, String surname, String givenName, String preferredName, org.joda.time.LocalDate dob)` in class `io.swagger.samples.inflector.springboot.controllers.Default`
+2017-12-20 16:11:00.041  WARN 2465 --- [ost-startStop-1] io.swagger.inflector.SwaggerInflector    : There are unimplemented operations!
+2017-12-20 16:11:00.042  WARN 2465 --- [ost-startStop-1] io.swagger.inflector.SwaggerInflector    : io.swagger.samples.inflector.springboot.controllers.Default
+2017-12-20 16:11:00.042  WARN 2465 --- [ost-startStop-1] io.swagger.inflector.SwaggerInflector    :  - public io.swagger.inflector.models.ResponseContext updateUserDetails(io.swagger.inflector.models.RequestContext request, String surname, String givenName, String preferredName, org.joda.time.LocalDate dob)
+2017-12-20 16:11:00.149  WARN 2465 --- [ost-startStop-1] uration$JodaDateTimeJacksonConfiguration : spring.jackson.date-format could not be used to configure formatting of Joda's DateTime. You may want to configure spring.jackson.joda-date-time-format as well.
+2017-12-20 16:11:00.628  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-12-20 16:11:00.629  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-20 16:11:00.629  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-20 16:11:00.629  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-20 16:11:00.630  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-20 16:11:00.630  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-12-20 16:11:00.630  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-12-20 16:11:00.631  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-12-20 16:11:00.631  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'io.swagger.samples.inflector.springboot.config.InflectorConfig' to [/api/*]
+2017-12-20 16:11:00.634  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-20 16:11:00.634  INFO 2465 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-12-20 16:11:01.018  INFO 2465 --- [    Test worker] o.s.ws.soap.saaj.SaajSoapMessageFactory  : Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2017-12-20 16:11:01.263  INFO 2465 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@236c3ae5: startup date [Wed Dec 20 16:10:55 AEDT 2017]; root of context hierarchy
+2017-12-20 16:11:01.360  INFO 2465 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-20 16:11:01.362  INFO 2465 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-20 16:11:01.408  INFO 2465 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 16:11:01.409  INFO 2465 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 16:11:01.466  INFO 2465 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-20 16:11:01.895  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}&quot; onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-12-20 16:11:01.897  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/trace || /trace.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:01.899  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:01.900  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/beans || /beans.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:01.902  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-12-20 16:11:01.903  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:01.904  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/health || /health.json],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2017-12-20 16:11:01.906  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env/{name:.*}],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-12-20 16:11:01.906  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env || /env.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:01.909  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:01.913  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/dump || /dump.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:01.914  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:01.916  INFO 2465 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/info || /info.json],methods=[GET],produces=[application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-12-20 16:11:02.298  INFO 2465 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-20 16:11:02.305  INFO 2465 --- [    Test worker] i.s.s.inflector.springboot.StepDefs      : Started StepDefs in 7.873 seconds (JVM running for 10.309)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at 20/12/2017 4:11:03 PM</p>
+</div>
+</div>
+</body>
+</html>

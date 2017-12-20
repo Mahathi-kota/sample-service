@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.swagger.samples.inflector.springboot.tests.InflectorApplicationRestApiH2LocalWsTests" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="Mahathis-MBP" time="0.0">
+  <properties/>
+  <system-out><![CDATA[16:11:05.212 [Test worker] INFO io.swagger.samples.inflector.springboot.SpringProfileCucumber - initial spring.profiles.active: null
+16:11:05.218 [Test worker] INFO io.swagger.samples.inflector.springboot.SpringProfileCucumber - current spring.profiles.active: integrationTest,restApi,h2,localWs
+2017-12-20 16:11:14.189  INFO 2467 --- [nio-8080-exec-1] i.s.i.c.SwaggerOperationController       : calling method public io.swagger.inflector.models.ResponseContext io.swagger.samples.inflector.springboot.controllers.Default.getApiRoot(io.swagger.inflector.models.RequestContext) on controller io.swagger.samples.inflector.springboot.controllers.Default@6fe0e1a5 with args [io.swagger.inflector.models.RequestContext@71f262e5]
+2017-12-20 16:11:14.960  INFO 2467 --- [nio-8080-exec-4] i.s.i.c.SwaggerOperationController       : calling method public io.swagger.inflector.models.ResponseContext io.swagger.samples.inflector.springboot.controllers.Default.getApiRoot(io.swagger.inflector.models.RequestContext) on controller io.swagger.samples.inflector.springboot.controllers.Default@6fe0e1a5 with args [io.swagger.inflector.models.RequestContext@12e00875]
+2017-12-20 16:11:14.967  INFO 2467 --- [nio-8080-exec-5] i.s.i.c.SwaggerOperationController       : calling method public io.swagger.inflector.models.ResponseContext io.swagger.samples.inflector.springboot.controllers.Default.getUserDetails(io.swagger.inflector.models.RequestContext) on controller io.swagger.samples.inflector.springboot.controllers.Default@6fe0e1a5 with args [io.swagger.inflector.models.RequestContext@17050fcc]
+2017-12-20 16:11:14.978  INFO 2467 --- [nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-20 16:11:14.978  INFO 2467 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-20 16:11:15.007  INFO 2467 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+
+4 Scenarios (?[33m3 pending?[0m, ?[32m1 passed?[0m)
+12 Steps (?[36m4 skipped?[0m, ?[33m3 pending?[0m, ?[32m5 passed?[0m)
+0m1.896s
+
+cucumber.api.PendingException: TODO: 404 null
+	at io.swagger.samples.inflector.springboot.client.rest.RestSampleServiceClient.followLink(RestSampleServiceClient.java:36)
+	at io.swagger.samples.inflector.springboot.StepDefs.iRequestTheAccountAPI(StepDefs.java:75)
+	at ✽.When I request the Account API(Accounts.feature:12)
+
+cucumber.api.PendingException: TODO: 501 null
+	at io.swagger.samples.inflector.springboot.client.rest.RestSampleServiceClient.followLink(RestSampleServiceClient.java:36)
+	at io.swagger.samples.inflector.springboot.StepDefs.iRequestTheUserDetailsAPI(StepDefs.java:64)
+	at ✽.When I request the User Details API(UserDetails.feature:12)
+
+cucumber.api.PendingException: TODO: implement me
+	at io.swagger.samples.inflector.springboot.StepDefs.setThePreferredNameTo(StepDefs.java:100)
+	at ✽.When set the preferred name to "John Doe, first of his name, fictitious in nature, king of the unknown, bane of detectives, master of mysteries."(UserDetails.feature:21)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

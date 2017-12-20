@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="3" tests="4" time="0.491584">
+<testcase classname="Accounts" name="Get Accounts Details" time="0.176155">
+<skipped><![CDATA[Given The user has the following accounts...................................passed
+When I request the Account API..............................................passed
+Then I'll get the following account details.................................pending
+]]></skipped>
+</testcase>
+<testcase classname="Root API" name="Get Root" time="0.018129">
+<system-out><![CDATA[When I request the root API.................................................passed
+Then I'll get links to the following endpoints..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Details" name="Get User Details" time="0.294009">
+<skipped><![CDATA[Given The User table has the following entry................................passed
+When I request the User Details API.........................................passed
+Then I'll get the following user details....................................pending
+]]></skipped>
+</testcase>
+<testcase classname="User Details" name="Set Preferred Name" time="0.003291">
+<skipped><![CDATA[Given The User table has the following entry................................passed
+When set the preferred name to "John Doe, first of his name, fictitious in nature, king of the unknown, bane of detectives, master of mysteries.".pending
+And I request the User Details API..........................................skipped
+Then I'll get the following user details....................................skipped
+]]></skipped>
+</testcase>
+</testsuite>

@@ -1,0 +1,381 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Get Accounts Details",
+        "description": "",
+        "id": "accounts;get-accounts-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 161457598,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user has the following accounts",
+            "match": {
+              "location": "StepDefs.theUserHasTheFollowingAccounts(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "BSB",
+                  "AccountNo",
+                  "Balance"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "123456",
+                  "123456",
+                  "433.21"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "123456",
+                  "123457",
+                  "1433.21"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 987607716,
+              "error_message": "cucumber.api.PendingException: TODO: 404 null\n\tat io.swagger.samples.inflector.springboot.client.rest.RestSampleServiceClient.followLink(RestSampleServiceClient.java:36)\n\tat io.swagger.samples.inflector.springboot.StepDefs.iRequestTheAccountAPI(StepDefs.java:75)\n\tat ✽.When I request the Account API(Accounts.feature:12)\n",
+              "status": "pending"
+            },
+            "line": 12,
+            "name": "I request the Account API",
+            "match": {
+              "location": "StepDefs.iRequestTheAccountAPI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I\u0027ll get the following account details",
+            "match": {
+              "location": "StepDefs.iLlGetTheFollowingAccountDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "BSB",
+                  "AccountNo",
+                  "Balance"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "123456",
+                  "123456",
+                  "433.21"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "123456",
+                  "123457",
+                  "1433.21"
+                ],
+                "line": 16
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Accounts",
+    "description": "So that I can check how much money I have\r\nAs an API consumer\r\nI want the Accounts API to provide me with my account balances",
+    "id": "accounts",
+    "keyword": "Feature",
+    "uri": "Accounts.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@accounts"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Get Root",
+        "description": "",
+        "id": "root-api;get-root",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8371638,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I request the root API",
+            "match": {
+              "location": "StepDefs.i_request_the_root_API()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16834055,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I\u0027ll get links to the following endpoints",
+            "match": {
+              "location": "StepDefs.illGetLinksToTheFollowingEndpoints(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User Details"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Accounts"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Root API",
+    "description": "So that I can disover new API features and not have to hard-code URLs\r\nAs an API consumer\r\nI want the Root API to provide me with links to other parts of the API",
+    "id": "root-api",
+    "keyword": "Feature",
+    "uri": "RootAPI.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@root"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 7,
+            "value": "# NOTE: The system is designed for only a single user"
+          }
+        ],
+        "line": 8,
+        "name": "Get User Details",
+        "description": "",
+        "id": "user-details;get-user-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 550850692,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The User table has the following entry",
+            "match": {
+              "location": "StepDefs.theUserTableHasTheFollowingEntry(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Doe, John"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "DoB",
+                  "01/Jan/1768"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166933115,
+              "error_message": "cucumber.api.PendingException: TODO: 501 null\n\tat io.swagger.samples.inflector.springboot.client.rest.RestSampleServiceClient.followLink(RestSampleServiceClient.java:36)\n\tat io.swagger.samples.inflector.springboot.StepDefs.iRequestTheUserDetailsAPI(StepDefs.java:64)\n\tat ✽.When I request the User Details API(UserDetails.feature:12)\n",
+              "status": "pending"
+            },
+            "line": 12,
+            "name": "I request the User Details API",
+            "match": {
+              "location": "StepDefs.iRequestTheUserDetailsAPI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I\u0027ll get the following user details",
+            "match": {
+              "location": "StepDefs.iLlGetTheFollowingUserDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Surname",
+                  "GivenName",
+                  "DoB"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Doe",
+                  "John",
+                  "1768-01-01"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Set Preferred Name",
+        "description": "",
+        "id": "user-details;set-preferred-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2120680,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The User table has the following entry",
+            "match": {
+              "location": "StepDefs.theUserTableHasTheFollowingEntry(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "DoB"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Doe, John",
+                  "01/Jan/1768"
+                ],
+                "line": 20
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1474461,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat io.swagger.samples.inflector.springboot.StepDefs.setThePreferredNameTo(StepDefs.java:100)\n\tat ✽.When set the preferred name to \"John Doe, first of his name, fictitious in nature, king of the unknown, bane of detectives, master of mysteries.\"(UserDetails.feature:21)\n",
+              "status": "pending"
+            },
+            "line": 21,
+            "name": "set the preferred name to \"John Doe, first of his name, fictitious in nature, king of the unknown, bane of detectives, master of mysteries.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Doe, first of his name, fictitious in nature, king of the unknown, bane of detectives, master of mysteries.",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefs.setThePreferredNameTo(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I request the User Details API",
+            "match": {
+              "location": "StepDefs.iRequestTheUserDetailsAPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I\u0027ll get the following user details",
+            "match": {
+              "location": "StepDefs.iLlGetTheFollowingUserDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "surname",
+                  "givenName",
+                  "dob",
+                  "preferredName"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "Doe",
+                  "John",
+                  "1768-01-01",
+                  "John Doe, first of his name, fictitious in nature, king of the unknown, bane of detectives, master of mysteries."
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Details",
+    "description": "So that I can check if my name and other details correct on the site\r\nAs an API consumer\r\nI want the User Details API to provide me with my details",
+    "id": "user-details",
+    "keyword": "Feature",
+    "uri": "UserDetails.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@userDetails"
+      }
+    ]
+  }
+]

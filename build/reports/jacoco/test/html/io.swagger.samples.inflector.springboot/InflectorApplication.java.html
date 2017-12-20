@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>InflectorApplication.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">sample-service</a> &gt; <a href="index.source.html" class="el_package">io.swagger.samples.inflector.springboot</a> &gt; <span class="el_source">InflectorApplication.java</span></div><h1>InflectorApplication.java</h1><pre class="source lang-java linenums">/*
+ *  Copyright 2016 SmartBear Software
+ *
+ *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+package io.swagger.samples.inflector.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
+import org.springframework.ws.client.core.WebServiceTemplate;
+
+import io.swagger.inflector.config.Configuration;
+
+@SpringBootApplication
+<span class="fc" id="L32">public class InflectorApplication {</span>
+
+  public static void main(String[] args) {
+<span class="nc" id="L35">    SpringApplication.run(InflectorApplication.class, args);</span>
+<span class="nc" id="L36">  }</span>
+
+  @Bean
+  Configuration configuration(ApplicationContext applicationContext) {
+<span class="fc" id="L40">    Configuration configuration = Configuration.read();</span>
+<span class="fc" id="L41">    configuration.setControllerFactory((cls, operation) -&gt; applicationContext.getBean(cls));</span>
+<span class="fc" id="L42">    return configuration;</span>
+  }
+
+  /**
+   * Since we're using both Actuator and Jersey, we need to use Springs &lt;a href=
+   * &quot;http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cors.html#_filter_based_cors_support&quot;&gt;
+   * Filter based CORS support&lt;/a&gt;
+   *
+   * @return corsFilter
+   */
+  @Bean
+  public FilterRegistrationBean corsFilter() {
+<span class="fc" id="L54">    CorsConfiguration config = new CorsConfiguration();</span>
+<span class="fc" id="L55">    config.setAllowCredentials(true);</span>
+<span class="fc" id="L56">    config.addAllowedOrigin(&quot;*&quot;);</span>
+<span class="fc" id="L57">    config.addAllowedHeader(&quot;*&quot;);</span>
+<span class="fc" id="L58">    config.addAllowedMethod(&quot;*&quot;);</span>
+<span class="fc" id="L59">    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();</span>
+<span class="fc" id="L60">    source.registerCorsConfiguration(&quot;/**&quot;, config);</span>
+<span class="fc" id="L61">    FilterRegistrationBean bean = new FilterRegistrationBean(new CorsFilter(source));</span>
+<span class="fc" id="L62">    bean.setOrder(0);</span>
+<span class="fc" id="L63">    return bean;</span>
+  }
+
+  @Bean
+  public WebServiceTemplate webServiceTemplate() {
+<span class="fc" id="L68">    return new WebServiceTemplate();</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

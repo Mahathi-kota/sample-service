@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Scenario: Get User Details</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Scenario: Get User Details</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Scenario: Get User Details</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">1</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.313s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox skipped" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Given The User table has the following entry</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="skipped">Then I'll get the following user details</td>
+<td>-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">When I request the User Details API</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">classMethod</td>
+<td>0.313s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017-12-20 16:11:02.557  INFO 2465 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [io.swagger.samples.inflector.springboot.StepDefs]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-12-20 16:11:02.563  INFO 2465 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-12-20 16:11:02.566  INFO 2465 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@76f68879, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@174cae57, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5a730be4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f6abb2d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d9d55f9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6f516e0b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2dbf642e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@27861167, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@50c3baf3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3406a7d6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@62ce3b6c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@75d4037b]
+2017-12-20 16:11:02.567  INFO 2465 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Replacing scope 'cucumber-glue' from [cucumber.runtime.java.spring.GlueCodeScope@5ea2d504] to [cucumber.runtime.java.spring.GlueCodeScope@393413c0]
+2017-12-20 16:11:02.821  INFO 2465 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL #:1 t:22*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.822  INFO 2465 --- [    Test worker] h2database                               : jdbc[3] 
+/**/Connection conn0 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.824  INFO 2465 --- [    Test worker] h2database                               : jdbc[4] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.825  INFO 2465 --- [    Test worker] h2database                               : jdbc[4] 
+/*SQL #:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.825  INFO 2465 --- [    Test worker] h2database                               : jdbc[4] 
+/**/Connection conn1 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.826  INFO 2465 --- [    Test worker] h2database                               : jdbc[5] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.827  INFO 2465 --- [    Test worker] h2database                               : jdbc[5] 
+/*SQL #:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.828  INFO 2465 --- [    Test worker] h2database                               : jdbc[5] 
+/**/Connection conn2 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.829  INFO 2465 --- [    Test worker] h2database                               : jdbc[6] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.831  INFO 2465 --- [    Test worker] h2database                               : jdbc[6] 
+/*SQL #:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.831  INFO 2465 --- [    Test worker] h2database                               : jdbc[6] 
+/**/Connection conn3 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.832  INFO 2465 --- [    Test worker] h2database                               : jdbc[7] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.834  INFO 2465 --- [    Test worker] h2database                               : jdbc[7] 
+/*SQL #:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.834  INFO 2465 --- [    Test worker] h2database                               : jdbc[7] 
+/**/Connection conn4 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.836  INFO 2465 --- [    Test worker] h2database                               : jdbc[8] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.837  INFO 2465 --- [    Test worker] h2database                               : jdbc[8] 
+/*SQL #:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.838  INFO 2465 --- [    Test worker] h2database                               : jdbc[8] 
+/**/Connection conn5 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.840  INFO 2465 --- [    Test worker] h2database                               : jdbc[9] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.842  INFO 2465 --- [    Test worker] h2database                               : jdbc[9] 
+/*SQL #:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.842  INFO 2465 --- [    Test worker] h2database                               : jdbc[9] 
+/**/Connection conn6 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.844  INFO 2465 --- [    Test worker] h2database                               : jdbc[10] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.845  INFO 2465 --- [    Test worker] h2database                               : jdbc[10] 
+/*SQL #:1 t:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.846  INFO 2465 --- [    Test worker] h2database                               : jdbc[10] 
+/**/Connection conn7 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.847  INFO 2465 --- [    Test worker] h2database                               : jdbc[11] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.848  INFO 2465 --- [    Test worker] h2database                               : jdbc[11] 
+/*SQL #:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.849  INFO 2465 --- [    Test worker] h2database                               : jdbc[11] 
+/**/Connection conn8 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.850  INFO 2465 --- [    Test worker] h2database                               : jdbc[12] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2017-12-20 16:11:02.851  INFO 2465 --- [    Test worker] h2database                               : jdbc[12] 
+/*SQL #:1*/RUNSCRIPT FROM 'classpath:sql/create.sql';
+2017-12-20 16:11:02.852  INFO 2465 --- [    Test worker] h2database                               : jdbc[12] 
+/**/Connection conn9 = DriverManager.getConnection(&quot;jdbc:h2:mem:test_db;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=4;DATABASE_TO_UPPER=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/create.sql'&quot;, &quot;SA&quot;, &quot;&quot;);
+2017-12-20 16:11:02.861  INFO 2465 --- [    Test worker] h2database                               : jdbc[12] 
+/*SQL #:1*/insert into UserDetails values( 'Doe, John','01/Jan/1768');
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at 20/12/2017 4:11:03 PM</p>
+</div>
+</div>
+</body>
+</html>
