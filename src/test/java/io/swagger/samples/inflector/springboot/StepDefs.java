@@ -24,6 +24,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.swagger.samples.inflector.springboot.client.SampleServiceClient;
 import io.swagger.samples.inflector.springboot.models.Resource;
+import io.swagger.samples.inflector.springboot.models.UserResource;
+import io.swagger.samples.outbound.USerDetails;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = { InflectorApplication.class, TestConfiguration.class })
@@ -86,7 +88,20 @@ public class StepDefs {
 	}
 
 	@Then("^I'll get the following user details$")
-	public void iLlGetTheFollowingUserDetails(DataTable arg1) throws Throwable {
+	public void iLlGetTheFollowingUserDetails(Map<String,String> expected) throws Throwable {
+		UserResource ur = (UserResource)resource;
+		for( Map.Entry<String, String> row : expected.entrySet() ) {
+			switch(row.getKey()) {
+				case "Surname":
+					USerDetails usd =ur.getUserDetails().
+					//assertTrue("Doe".equals(usd.getSurname()),true);
+					
+					assertTrue(true);
+					throw new PendingException();
+				default:
+					throw new PendingException();
+			}
+		}
 		// Write code here that turns the phrase above into concrete actions
 		// For automatic transformation, change DataTable to one of
 		// List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
